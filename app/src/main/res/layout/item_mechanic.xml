@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvGarageName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/garage_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMechName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Grage Name"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGarageName" />
+
+
+        <ImageView
+            android:id="@+id/ivAddress"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/ic_house_24"
+            app:layout_constraintStart_toStartOf="@+id/tvMechName"
+            app:layout_constraintTop_toBottomOf="@+id/tvMechName"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/nothing" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivAddress"
+            app:layout_constraintTop_toTopOf="@+id/ivAddress"
+            tools:ignore="MissingConstraints"
+            tools:text="Mahendra Parmar" />
+
+
+        <ImageView
+            android:id="@+id/ivPhone"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/ic_local_phone"
+            app:layout_constraintStart_toStartOf="@+id/ivAddress"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/nothing" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivPhone"
+            app:layout_constraintTop_toTopOf="@+id/ivPhone"
+            tools:text="Mahendra Parmar" />
+
+        <Button
+            style="@style/Button"
+            android:id="@+id/btnRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvPhone"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

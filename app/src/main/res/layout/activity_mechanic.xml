@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/clRoot"
+    tools:context=".MechanicSignUpActivity">
+
+    <include
+        android:id="@+id/tbMech"
+        layout="@layout/layout_common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbMech">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textview16"
+                android:id="@+id/tvFullName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_goneMarginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Full Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlFullName"
+                style="@style/TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvFullName"
+                app:layout_constraintStart_toStartOf="@+id/tvFullName"
+                app:layout_constraintTop_toBottomOf="@+id/tvFullName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/etroundboder"
+                    android:id="@+id/edtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <TextView
+                style="@style/textview16"
+                android:id="@+id/tvGarageName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_goneMarginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Garage Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tlFullName"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlGarageName"
+                style="@style/TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvGarageName"
+                app:layout_constraintStart_toStartOf="@+id/tvGarageName"
+                app:layout_constraintTop_toBottomOf="@+id/tvGarageName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/etroundboder"
+                    android:id="@+id/edtGarageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <TextView
+                style="@style/textview16"
+                android:id="@+id/tvContactNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Contact No"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tlGarageName"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlContactNo"
+                style="@style/TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvContactNo"
+                app:layout_constraintStart_toStartOf="@+id/tvContactNo"
+                app:layout_constraintTop_toBottomOf="@+id/tvContactNo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtContactNo"
+                    style="@style/etroundboder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <TextView
+                style="@style/textview16"
+                android:id="@+id/tvCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:text="City"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tlContactNo"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlCity"
+                style="@style/TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvCity"
+                app:layout_constraintStart_toStartOf="@+id/tvCity"
+                app:layout_constraintTop_toBottomOf="@+id/tvCity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtCity"
+                    style="@style/etroundboder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <TextView
+                style="@style/textview16"
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Email Address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tlCity"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlEmailAddress"
+                style="@style/TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvEmail"
+                app:layout_constraintStart_toStartOf="@+id/tvEmail"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmailAddress"
+                    style="@style/etroundboder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/textview16"
+                android:id="@+id/tvPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="password"
+                app:layout_constraintEnd_toEndOf="@+id/tlEmailAddress"
+                app:layout_constraintStart_toStartOf="@+id/tlEmailAddress"
+                app:layout_constraintTop_toBottomOf="@+id/tlEmailAddress" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlPassword"
+                style="@style/TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                app:passwordToggleEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvPassword"
+                app:layout_constraintTop_toBottomOf="@+id/tvPassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPassword"
+                    style="@style/etroundboder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                style="@style/textview16"
+                android:id="@+id/tvgaragePlace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Garage place"
+                app:layout_constraintEnd_toEndOf="@+id/tlPassword"
+                app:layout_constraintStart_toStartOf="@+id/tlPassword"
+                app:layout_constraintTop_toBottomOf="@+id/tlPassword" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlgaragePlace"
+                style="@style/TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvgaragePlace"
+                app:layout_constraintTop_toBottomOf="@+id/tvgaragePlace">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtgaragePlace"
+                    style="@style/etroundboder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/textview16"
+                android:id="@+id/tvAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Address"
+                app:layout_constraintEnd_toEndOf="@+id/tlPassword"
+                app:layout_constraintStart_toStartOf="@+id/tlgaragePlace"
+                app:layout_constraintTop_toBottomOf="@+id/tlgaragePlace" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlAddress"
+                style="@style/TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvAddress"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddress">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtAddress"
+                    style="@style/etroundboder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:minLines="2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                style="@style/Button.primary"
+                android:id="@+id/btnLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sign Up"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/tlAddress"
+                app:layout_constraintStart_toStartOf="@+id/tlAddress"
+                app:layout_constraintTop_toBottomOf="@+id/tlAddress" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                app:layout_constraintStart_toStartOf="@id/btnLogin"
+                app:layout_constraintEnd_toEndOf="@id/btnLogin"
+                app:layout_constraintTop_toTopOf="@id/btnLogin"
+                app:layout_constraintBottom_toBottomOf="@id/btnLogin"
+                android:visibility="invisible"
+                android:elevation="10dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

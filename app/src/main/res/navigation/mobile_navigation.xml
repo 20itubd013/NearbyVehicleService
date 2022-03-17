@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.nearbyvechicleservice.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.nearbyvechicleservice.home.MapFragment"
+        android:label="@string/map"
+        tools:layout="@layout/fragement_map1" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.nearbyvechicleservice.home.AccountFragment"
+        android:label="@string/account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_mech"
+        android:name="com.nearbyvechicleservice.home.GarageFragment"
+        android:label="@string/grages"
+        tools:layout="@layout/fragment_garage" />
+
+</navigation>

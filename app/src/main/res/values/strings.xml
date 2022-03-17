@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">NearbyVehicleService</string>
+    <string name="Email">Email</string>
+    <string name="inputemail">Inputemail</string>
+    <string name="name">Name</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="email_address">Email Address</string>
+    <string name="city">City</string>
+    <string name="contact_no">Contact No</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">password</string>
+    <string name="forgotpassword">FORGOTPASSWORD?</string>
+    <string name="login">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="new_user_register_now">New User? Register Now.</string>
+    <string name="todo">TODO</string>
+    <string name="signup">SignUp</string>
+    <string name="client">Client</string>
+    <string name="Machanic">Machanic</string>
+    <string name="title_activity_home_page">home_page</string>
+    <string name="title_home">Home</string>
+    <string name="map">Map</string>
+    <string name="title_account">Account</string>
+
+    <!--<string name="map_key" translatable="false">AIzaSyA4JYaQk7z_L_6-VL4keUQNgMIP9HWK3JU</string>
+-->
+
+    <string name="map_key" translatable="false">AIzaSyAnX7PVgOh-N7UEEqBGLgELTlzgsiRanvE</string>
+
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="account">Account</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="update">Update</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="place">Place</string>
+    <string name="grages">Garages</string>
+    <string name="err_network">No internet available.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logot">Logout</string>
+    <string name="garage_name">Garage Name</string>
+    <string name="nothing">nothing</string>
+    <string name="request">Request</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "749498541922",
+    "project_id": "nearbyvechicleservice",
+    "storage_bucket": "nearbyvechicleservice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749498541922:android:768658724b7fc886186e3b",
+        "android_client_info": {
+          "package_name": "com.nearbyvechicleservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749498541922-fptk541dshvhj0j1d5dp0714fjq7jc0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nearbyvechicleservice",
+            "certificate_hash": "f4e08a42317b7e5aeb421ad8114eea6bdab5ecc1"
+          }
+        },
+        {
+          "client_id": "749498541922-51ncttfcovq73uepfpbbgac4vrtfkav4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqVxvGfzW54jTAiPasloNkLRUv8vxf5Ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749498541922-51ncttfcovq73uepfpbbgac4vrtfkav4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

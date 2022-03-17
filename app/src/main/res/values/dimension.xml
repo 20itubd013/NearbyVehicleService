@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="two_margin">2dp</dimen>
+    <dimen name="four_margin">4dp</dimen>
+    <dimen name="eight_margin">8dp</dimen>
+    <dimen name="sis_margin">16dp</dimen>
+    <dimen name="twenty_four_margin">24dp</dimen>
+
+    <dimen name="corner_radius">14dp</dimen>
+
+</resources>
