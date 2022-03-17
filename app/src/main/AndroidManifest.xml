@@ -68,6 +68,8 @@
             </intent-filter>
         </service>
 
+
+        
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
